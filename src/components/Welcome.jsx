@@ -52,6 +52,12 @@ const setupTextHover = (container, type) => {
   }
 }
 
+/**
+ * Render the welcome section with animated, per-letter title and subtitle.
+ *
+ * Attaches hover-driven font-weight animations to the title and subtitle elements on mount and removes those handlers on unmount.
+ * @returns {JSX.Element} The welcome section containing the animated subtitle, large title, and a small-screen note.
+ */
 function Welcome() {
   const titleRef = useRef(null)
   const subtitleRef = useRef(null)
