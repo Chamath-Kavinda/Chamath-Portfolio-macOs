@@ -1,4 +1,4 @@
-import WindowControlls from "#components/WindowControls"
+import WindowControls from "#components/WindowControls"
 import { techStack } from "#constants"
 import WindowWrapper from "#hoc/WindowWrapper"
 import { Check, Flag } from "lucide-react"
@@ -7,7 +7,7 @@ function Terminal() {
     return (
         <>
             <div id='window-header'>
-                <WindowControlls target="terminal"/>
+                <WindowControls target="terminal"/>
                 <h2>Tech Stack</h2>
             </div>
 
@@ -25,7 +25,7 @@ function Terminal() {
                 <ul className="content">
                     {techStack.map(({ category, items}) => (
                         <li key={category} className="flex items-center">
-                            <Check className="check" sizwe={20} />
+                            <Check className="check" size={20} />
                             <h3>{category}</h3>
                             <ul>
                                 {items.map((item, i) => (
@@ -38,7 +38,7 @@ function Terminal() {
 
                 <div className="footnote">
                     <p>
-                        <Check size={20} /> 5 of 5 stachs loaded successfully (100%)
+                        <Check size={20} /> 5 of 5 stacks loaded successfully (100%)
                     </p>
 
                     <p className="text-black">
